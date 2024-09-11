@@ -1,13 +1,5 @@
-# naraChans
-## start
-```sh
-npm run dev
-```
+# ならちゃんずサイト
 
-## build
-```sh
-npm run build
-```
-
-## url
+## サイトurl(AWS/S3)
 https://sumaho.tech
+
