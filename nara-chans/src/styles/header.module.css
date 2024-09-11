@@ -1,0 +1,44 @@
+/* header部分 */
+.header_icon {
+  width: 200px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.header_icon_area {
+  padding-top: 5px;
+  height: 60%;
+  text-align: center;
+}
+
+/* メインメニューバー */
+.nav_main {
+  text-align: center;
+}
+
+.nav_main ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav_main ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+.nav_main ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+@media (max-width: 599px) {
+  .nav_main ul li a {
+  font-size: 13px;
+  }
+}
+
+.nav_main ul li a:hover {
+  color: var(--button--focus--color);
+}

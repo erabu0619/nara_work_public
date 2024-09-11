@@ -1,0 +1,567 @@
+/*レスポンシブ　メモ
+メインはPC
+タブレット：1024px
+スマホ：599px
+*/
+
+/* 共通変数を作成する 他のmoduleでも使用可能*/
+:root {
+  --button--focus--color: #F5B1AA;
+  --red: #e2001b;
+  --header--height: 70px;
+  --img--width: 250px;
+  --img--height: 250px;
+  --img--width--collection: 380px;
+  --img--height--collection: 380px;
+  --img--width--tab: 340px;
+  --img--height--tab: 340px;
+  --img--width--collection--sp: 300px;
+  --img--height--collection--sp: 300px;
+}
+
+:root {
+  --article-background-collar: #fdfdfd;
+  --article-solid-collar: #c0c0c0;
+  --article-solid-size: 1px;
+}
+
+:root {
+  --font--size--main: 16px;
+  --font--size--label: 20px;
+  --font--size--small: 12px;
+  --font--color-main: #43474c;
+}
+
+/****** margin部品 ******/
+/* margin top */
+.margin_top_5 {
+  margin-top: 5px;
+}
+
+.margin_top_10 {
+  margin-top: 10px;
+}
+
+.margin_top_20 {
+  margin-top: 20px;
+}
+
+.margin_top_30 {
+  margin-top: 30px;
+}
+
+.margin_top_40 {
+  margin-top: 40px;
+}
+
+.margin_top_50 {
+  margin-top: 50px;
+}
+
+.margin_top_60 {
+  margin-top: 60px;
+}
+
+/* margin bottom */
+.margin_bottom_5 {
+  margin-bottom: 5px;
+}
+
+.margin_bottom_10 {
+  margin-bottom: 10px;
+}
+
+.margin_bottom_20 {
+  margin-bottom: 20px;
+}
+
+.margin_bottom_30 {
+  margin-bottom: 30px;
+}
+
+.margin_bottom_40 {
+  margin-bottom: 40px;
+}
+
+.margin_bottom_50 {
+  margin-bottom: 50px;
+}
+
+.margin_bottom_60 {
+  margin-bottom: 60px;
+}
+
+/* margin left */
+.margin_left_5 {
+  margin-left: 5px;
+}
+
+.margin_left_10 {
+  margin-left: 10px;
+}
+
+.margin_left_20 {
+  margin-left: 20px;
+}
+
+.margin_left_30 {
+  margin-left: 30px;
+}
+
+.margin_left_40 {
+  margin-left: 40px;
+}
+
+.margin_left_50 {
+  margin-left: 50px;
+}
+
+.margin_left_60 {
+  margin-left: 60px;
+}
+
+/* margin right */
+.margin_right_5 {
+  margin-right: 5px;
+}
+
+.margin_right_10 {
+  margin-right: 10px;
+}
+
+.margin_right_20 {
+  margin-right: 20px;
+}
+
+.margin_right_30 {
+  margin-right: 30px;
+}
+
+.margin_right_40 {
+  margin-right: 40px;
+}
+
+.margin_right_50 {
+  margin-right: 50px;
+}
+
+.margin_right_60 {
+  margin-right: 60px;
+}
+
+/****** padding部品 ******/
+/* padding top */
+.padding_top_5 {
+  padding-top: 5px;
+}
+
+.padding_top_10 {
+  padding-top: 10px;
+}
+
+.padding_top_20 {
+  padding-top: 20px;
+}
+
+.padding_top_30 {
+  padding-top: 30px;
+}
+
+.padding_top_40 {
+  padding-top: 40px;
+}
+
+.padding_top_50 {
+  padding-top: 50px;
+}
+
+.padding_top_60 {
+  padding-top: 60px;
+}
+
+/* padding bottom */
+.padding_bottom_5 {
+  padding-bottom: 5px;
+}
+
+.padding_bottom_10 {
+  padding-bottom: 10px;
+}
+
+.padding_bottom_20 {
+  padding-bottom: 20px;
+}
+
+.padding_bottom_30 {
+  padding-bottom: 30px;
+}
+
+.padding_bottom_40 {
+  padding-bottom: 40px;
+}
+
+.padding_bottom_50 {
+  padding-bottom: 50px;
+}
+
+.padding_bottom_60 {
+  padding-bottom: 60px;
+}
+
+/* padding left */
+.padding_left_5 {
+  padding-left: 5px;
+}
+
+.padding_left_10 {
+  padding-left: 10px;
+}
+
+.padding_left_20 {
+  padding-left: 20px;
+}
+
+.padding_left_30 {
+  padding-left: 30px;
+}
+
+.padding_left_40 {
+  padding-left: 40px;
+}
+
+.padding_left_50 {
+  padding-left: 50px;
+}
+
+.padding_left_60 {
+  padding-left: 60px;
+}
+
+/* padding right */
+.padding_right_5 {
+  padding-right: 5px;
+}
+
+.padding_right_10 {
+  padding-right: 10px;
+}
+
+.padding_right_20 {
+  padding-right: 20px;
+}
+
+.padding_right_30 {
+  padding-right: 30px;
+}
+
+.padding_right_40 {
+  padding-right: 40px;
+}
+
+.padding_right_50 {
+  padding-right: 50px;
+}
+
+.padding_right_60 {
+  padding-right: 60px;
+}
+
+/*共通部分*/
+body {
+  width: auto;
+  padding-top: var(--header--height);
+  background-color: #F5F5F5;
+  font-family: "ヒラギノ明朝";
+  font-size: var(--font--size--main);
+  color: var(--font--color-main);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: var(--header--height);
+  background-color: #F5F5F5;
+  z-index: 3;
+}
+
+main {
+  background-color: #FFFFFF;
+  min-height: 100vh;
+}
+
+footer {
+  height: auto;
+  background-color: #F5F5F5;
+}
+
+button {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+/*隙間解決用*/
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+/*メイン部分*/
+.main_icon {
+  margin: 0;
+  background-size: 100%;
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  /* 背景画像の繰り返しを無効にする */
+  background-image: url(/img/common/main.jpg)
+}
+
+@media (max-width: 1024px) {
+  .main_icon {
+    height: 200px;
+  }
+}
+
+@media (max-width: 599px) {
+  .main_icon {
+    height: 80px;
+  }
+}
+
+/* メインエリア home */
+.main_content {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 100%;
+}
+
+.main_content h2 {
+  margin: 40px 0 0 0;
+  border-bottom: 3px solid var(--button--focus--color);
+  border-left: none !important;
+  font-size: 24px;
+}
+
+
+.articleListMain {
+  height: auto;
+  width: 100%;
+  margin: 20px 0 0;
+  padding: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.notExist {
+  padding: 0 auto;
+  margin: 30px 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #E13854;
+}
+
+.latest_area {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.cats_area {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.latest_area ul {
+  padding: 20px 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.latest_photo {
+  height: var(--img--width);
+  width: var(--img--height);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (599px <= width <=1024px) {
+  .latest_photo {
+    height: var(--img--width--tab);
+    width: var(--img--height--tab);
+  }
+}
+
+.latest_button_area {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.latest_button {
+  margin: 20px 0 20px 0 !important;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 1em;
+  width: 200px;
+  height: 50px;
+  font-size: 23px;
+  color: #000;
+  line-height: 1;
+  background: #ffe6ea;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    background: var(--button--focus--color);
+    transform: perspective(100px) translateZ(5px);
+  }
+}
+
+/* 最新記事用 */
+
+.latest_article {
+  position: relative;
+  /* フォーカスなし　もし猫用のモーダルを作成したら作る */
+  /* &:hover,
+  &:focus {
+    box-shadow: none;
+    transform: perspective(100px) translateZ(5px);
+  } */
+}
+
+.latest_article_photoarea {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  padding: 3px 10px 3px 10px;
+  background-color: var(--button--focus--color);
+  color: #FFF;
+  z-index: 1;
+}
+
+/* 新着情報 */
+.latest_table {
+  padding: 0 50px;
+}
+
+.latest_table>table {
+  width: 80%;
+  margin: 0 auto;
+  border-top: dotted 2px var(--button--focus--color);
+}
+
+.latest_table>table>tbody>tr>th,
+.latest_table>table>tbody>tr>td {
+  padding: 1.5em 0;
+  border-bottom: dotted 2px var(--button--focus--color);
+}
+
+.latest_table>table>tbody>tr>td.is_date {
+  padding: 0 3em 0 2em;
+  font-size: 87.5%
+}
+
+.latest_table>table>tbody>tr>td.is_category {
+  padding-left: 1em
+}
+
+.icon {
+  display: inline-block;
+  padding: .2em .5em;
+  font-size: 14px;
+  background-color: var(--button--focus--color);
+  white-space: nowrap;
+  vertical-align: middle
+}
+
+.latest_table>table>tbody>tr>td.is_text {
+  padding-left: 1.5em
+}
+
+.latest_table>table>tbody>tr>td.is_text>a {
+  position: relative;
+  color: #000;
+  transition: color .5s;
+  text-decoration: none;
+  cursor: default;
+}
+
+
+@media (max-width: 767px) {
+
+  .latest_table {
+    font-size: 14px;
+  }
+
+  .latest_table>table {
+    display: block;
+    width: 100%;
+  }
+
+  .latest_table>table>tbody {
+    display: block;
+  }
+
+  .latest_table>table>tbody>tr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1.2em 8.8vw 1.2em 0;
+    border-bottom: dotted 2px var(--button--focus--color);
+  }
+
+  .latest_table>table>tbody>tr>td.is_date {
+    padding: 0;
+  }
+
+  .latest_table>table>tbody>tr>td.is_category {
+    padding-left: 1em;
+  }
+
+  .latest_table>table>tbody>tr>th,
+  .latest_table>table>tbody>tr>td {
+    display: block;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .latest_table>table>tbody>tr>td.is_text {
+    position: static;
+    text-align: left;
+    width: 100%;
+    padding: 0 0 0 5px;
+    margin-top: 0.6em;
+  }
+}
+
+/* 絵文字 */
+.twemoji {
+  width: 58px;
+  height: 58px;
+}

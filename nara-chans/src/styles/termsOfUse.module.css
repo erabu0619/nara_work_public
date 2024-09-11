@@ -1,0 +1,49 @@
+.main {
+  height: auto;
+  width: 800px;
+  margin:  50px 50px 50px;
+  padding: 0 auto;
+}
+
+.main h1{
+  text-decoration: underline;
+}
+
+.main h2{
+  text-decoration: underline;
+}
+
+.main h3{
+  counter-reset: section;
+}
+
+.main h4{
+  text-decoration: underline dotted;
+  text-indent: 1em;
+}
+
+.main p{
+  text-indent: 1em;
+  overflow-wrap: break-all;
+  
+}
+
+@media (max-width: 599px) {
+  .main {
+    height: auto;
+    width: 90%;
+    margin: 10px 20px 10px 20px;
+    padding: 0 auto;
+    line-height: 25px;
+  }
+  .main ul{
+    padding-inline-start: 20px;
+  }
+  .main li{
+    font-size: 14px;
+  }
+  .main p{
+    font-size: 14px;
+    text-indent: 0.5em;
+  }
+}

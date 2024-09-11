@@ -1,0 +1,71 @@
+
+.cats_main {
+  height: auto;
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 0 auto;
+}
+
+.cats_select_area {
+  height: 100px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+.cats_photo_area {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cat_photo_collection img {
+  width: var(--img--width--collection);
+  height: var(--img--height--collection);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 599px) {
+  .cat_photo_collection img {
+    width: var(--img--width--collection--sp);
+    height: var(--img--height--collection--sp);
+    object-fit: cover;
+    /*padding: 30px;*/
+  }
+}
+
+
+.cats_select_value {
+  height: 30px;
+  width: 100%;
+}
+
+.cats_select_button {
+  /* background-image: url('../img/cats/検索アイコン.png'); */
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  object-fit: cover;
+}
+
+.cats_select_menu {
+  border: none;
+  border-bottom: 2px solid var(--button--focus--color);
+  font-size: 16px;
+  background-color: #FFF;
+}
+
+
+.cats_select_menu>option:checked {
+  background: red;
+  background: linear-gradient(red, red);
+}
