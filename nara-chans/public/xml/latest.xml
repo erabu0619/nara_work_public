@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Category種類 キャンペーン、猫、プログラミング、サービス-->
+<!-- 最大３件-->
+<!-- 表示されるのは上から3つ -->
+<value>
+  <startDate>0000/01/01</startDate>
+  <endDate>9999/01/01</endDate>
+  <date>2024/04/25</date>
+  <category>プログラミング</category>
+  <text>WSLに関連する記事を追加しました。</text>
+</value>
+<value>
+  <startDate>0000/01/01</startDate>
+  <endDate>9999/01/01</endDate>
+  <date>2024/02/27</date>
+  <category>猫</category>
+  <text>定吉の画像を追加しました。</text>
+</value>
+<value>
+  <startDate>0000/01/01</startDate>
+  <endDate>9999/01/01</endDate>
+  <date>2024/02/27</date>
+  <category>猫</category>
+  <text>茶々丸の画像を追加しました。</text>
+</value>
+<value>
+  <startDate>0000/01/01</startDate>
+  <endDate>9999/01/01</endDate>
+  <date>2024/05/05</date>
+  <category>プログラミング</category>
+  <text>Linuxコマンドの記事を追加しました。</text>
+</value>
+<value>
+  <startDate>0000/01/01</startDate>
+  <endDate>9999/01/01</endDate>
+  <date>2024/04/14</date>
+  <category>プログラミング</category>
+  <text>C++,ShellScriptに関連する記事を追加しました。</text>
+</value>
